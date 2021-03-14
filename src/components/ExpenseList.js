@@ -1,4 +1,5 @@
-import Ract from "react"
+import React from "react"
+import ExpenseItem from "./ExpenseItem"
 
 const ExpenseList = () => {
     const expenses = [
@@ -9,7 +10,7 @@ const ExpenseList = () => {
         { id: 1231, name: "Child Care", cost: 500},
     ];
     return (
-        <ul>
+        <ul className="list-group">
             {expenses.map((expense)=> (
                 <ExpenseItem
                 id={expense.id}
@@ -20,3 +21,5 @@ const ExpenseList = () => {
         </ul>
     )
 }
+
+export default ExpenseList;
