@@ -1,9 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Budget from "./components/Budget";
-import Remaining from "./components/Remaining"
-import ExpenseTotal from "./components/ExpenseTotal"
-import ExpenseList from "./components/ExpenseList"
+import Budget from "./components/Budget.js";
+import Remaining from "./components/Remaining.js";
+import ExpenseTotal from "./components/ExpenseTotal.js";
+import ExpenseList from "./components/ExpenseList.js";
+import AddExpenseForm from "./components/AddExpenseForm.js";
 
 const App = () => {
   return (
@@ -24,6 +25,12 @@ const App = () => {
       <div className="row mt-3">
         <div className="col-sm">
           <ExpenseList />
+        </div>
+      </div>
+      <h3 className ="mt-3">Add Expense</h3>
+      <div className ="mt-3">
+        <div className ="col-sm">
+          <AddExpenseForm />
         </div>
       </div>
     </div>
